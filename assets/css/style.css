@@ -40,6 +40,7 @@
 .bottom_navbar_right{
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .search_input{
@@ -61,4 +62,18 @@
   transform: translateY(-50%);
   left: 8px;
 
+}
+
+/* action_btn */
+.action_btn{
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action_btn:hover{
+  background-color: rgb(203, 203, 203);
+  transition: 0.3s ease-in-out;
 }
