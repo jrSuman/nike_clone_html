@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  padding: 0 32px;
+}
+.top_navbar{
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 8px 32px; */
+}
+
+.top_navbar_right ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.top_navbar_right ul li{
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+}
+
+.bottom_navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 12px 32px; */
+}
+
+.bottom_navbar_center ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.bottom_navbar_right{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.search_input{
+  border-radius: 50px;
+  border: 1px solid red;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.search_input input{
+  width: 100%;
+  border: none;
+  padding: 8px 12px 8px 40px;
+}
+.search_icon{
+  padding: 4px 4px 4px 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+
+}
