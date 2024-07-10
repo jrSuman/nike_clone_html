@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive design</title>
+
+    <style>
+      .responsive_container {
+        display: flex;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .box_1 {
+        background-color: red;
+      }
+      .box_2 {
+        background-color: green;
+      }
+      .box_3 {
+        background-color: yellow;
+      }
+      .box_4 {
+        background-color: purple;
+      }
+      .box_5 {
+        background-color: blue;
+      }
+
+      /* small screen size or mobile */
+      @media screen and (max-width: 620px) {
+        .responsive_container {
+          display: flex;
+          flex-direction: column;
+        }
+        .box_1 {
+          background-color: aqua;
+        }
+      }
+
+      /* medium screen or tablet screen */
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .responsive_container {
+          display: flex;
+          /* flex-direction: column; */
+          flex-wrap: wrap;
+        }
+      }
+
+      /* large screen or desktop */
+      @media only screen and (min-width: 1024) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive_container">
+      <div class="box box_1"></div>
+      <div class="box box_2"></div>
+      <div class="box box_3"></div>
+      <div class="box box_4"></div>
+      <div class="box box_5"></div>
+    </div>
+  </body>
+</html>

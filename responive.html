@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .parent_div{
+      display: flex;
+      gap: 20px;
+    }
+
+    .box{
+      width: 200px;
+      height: 200px;
+    }
+    .box_1{
+      background-color: red;
+    }
+    .box_2{
+      background-color: yellow;
+    }
+    .box_3{
+      background-color: green;
+    }
+    .box_4{
+      background-color: blue;
+    }
+    /* large screen or desktop */
+    @media only screen and (min-width: 1024){}
+
+     /* table devices  or medium devices */
+     @media only screen and (max-width: 760px) and (max-width: 1024px){
+      .parent_div{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+      }
+    }
+    /* mobile devices or small devices */
+    @media only screen and (max-width: 640px){
+      .parent_div{
+        display: flex;
+        flex-direction: column;
+      }
+      .box_1{
+        background-color: gray;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent_div">
+    <div class="box box_1"></div>
+    <div class="box box_2"></div>
+    <div class="box box_3"></div>
+    <div class="box box_4"></div>
+  </div>
+  
+</body>
+</html>
