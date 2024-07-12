@@ -68,6 +68,47 @@
 }
 
 
+.navbar_mobile_continer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 32px;
+}
+
+.navbar_mobile_right{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#navbar_menu{
+  position: fixed;
+  /* inset: 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(71, 70, 70, 0.303);
+  z-index: 100;
+}
+
+
+.navbar_sidebar{
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+
+
+
 
 .product_container{
   display: grid;
